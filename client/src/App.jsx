@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(()=>{
      fetchImage();
-     console.log(images)
+     
   },[])
  
   return (
