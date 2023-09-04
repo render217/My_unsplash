@@ -5,7 +5,7 @@ import ImageListSkeleton from "./ImageListSkeleton";
 const Main = ({ images ,reloadImages ,loading,error}) => {
   
   let content;
-  if(loading){
+  if(loading || images.length === 0){
     content = <ImageListSkeleton />
   }
   if(error){
