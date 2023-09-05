@@ -38,22 +38,38 @@
 
 #### Installation:
 
-1. Clone the repository:
+1.  Clone the repository:
 
-   ```bash
-   git clone https://github.com/render217/My_unsplash
-   ```
+    ```bash
+    git clone https://github.com/render217/My_unsplash
+    ```
 
-2. Navigate into the directory and install dependencies: both in client and backend folder
+2.   Create a .env file in backend/config folder and add the following as key = value
 
-   ```bash
-   npm install
-   ```
+            ```
+            PORT = 2121 (can be any port example: 3000)
+            MONGO_CLOUD_URI = your database URI
+            CLOUD_NAME = your cloudinary cloud name
+            API_KEY = your cloudinary api key
+            API_SECRET = your cloudinary api secret
+            ```
+      Create a .env file in client directory and add the following as key = value
+      ```
+        VITE_BACKEND_URL = localhost:PORT/api/v1/images 
+        
+        N.B(PORT => port you used for the backend)
+      ```
 
-3. Start the development server: in both client and backend folder
-   ```bash
-   npm run dev
-   ```
+3.  Navigate into the directory and install dependencies: both in client and backend folder
+
+    ```bash
+    npm install
+    ```
+
+4.  Start the development server: in both client and backend folder
+    ```bash
+    npm run dev
+    ```
 
 ### Built With
 
