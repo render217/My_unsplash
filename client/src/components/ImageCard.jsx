@@ -65,7 +65,7 @@ const ImageCard = ({ image ,reloadImages}) => {
         <div
           className={`${
             isHover ? "opacity-1" : "opacity-0"
-          } absolute right-5 left-5 bottom-3 text-lg duration-500  text-white  overflow-hidden mx-2 rounded-md py-2 `}
+          } absolute right-5 left-5 bottom-3 text-xl duration-500  text-white  overflow-hidden mx-2 rounded-md py-2 `}
         >
           <p>
             {image.label}
