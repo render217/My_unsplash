@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://image-uploader-client-one.vercel.app" target="_blank">
+    <a href="https://my-unsplash-ochre.vercel.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
