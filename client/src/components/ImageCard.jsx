@@ -47,13 +47,13 @@ const ImageCard = ({ image ,reloadImages}) => {
         }`}
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-    
       >
+        <div className={`${isHover ? "opacity-1" : "opacity-0"} duration-500  absolute bg-gradient-to-b from-black via-transparent to-black top-0 h-full w-full rounded-xl`}></div>
         <button
           onClick={()=>setIsModalOpen(true)}
           className={`${
             isHover ? "opacity-1" : "opacity-0"
-          } absolute right-5 top-2 duration-500  border text-pink-500 border-pink-500  hover:border-red-200  hover:shadow-red-500 text-sm w-16 px-1 py-1 rounded-md `}
+          } absolute right-5 top-5 duration-500  border text-red-500 border-red-500  hover:border-red-800  text-md font-semibold w-20 px-1 py-1 rounded-3xl `}
         >
           Delete
         </button>
@@ -65,7 +65,7 @@ const ImageCard = ({ image ,reloadImages}) => {
         <div
           className={`${
             isHover ? "opacity-1" : "opacity-0"
-          } absolute  text-sm bottom-2 duration-500  text-black  overflow-hidden mx-2 rounded-md py-2 `}
+          } absolute right-5 left-5 bottom-3 text-lg duration-500  text-white  overflow-hidden mx-2 rounded-md py-2 `}
         >
           <p>
             {image.label}

@@ -6,7 +6,7 @@ const ImageSchema = new mongoose.Schema({
     required: true,
     index: true,
     minlength: [5, "label must be greater than 5 chars"],
-    maxlength: [15, "label must be less than 15 chars"],
+    maxlength: [30, "label must be less than 30 chars"],
   },
   image: {
     type: String,
