@@ -86,7 +86,7 @@ const ImageCard = ({ image ,reloadImages}) => {
                     className="text-gray-700 text-sm block mb-1"
                     htmlFor=""
                   >
-                    Password
+                    Key
                   </label>
                   <input
                     type="text"
